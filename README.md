@@ -1,25 +1,42 @@
-# GOD LEGACY — Storefront foundation
+# GOD LEGACY — zero-budget storefront foundation
 
 **Brand:** GOD LEGACY  
 **Tagline:** LIVE SMARTER. LIVE STRONGER.  
-**Positioning:** Curated smart-living, fitness, everyday utility and travel/tech products.  
-**Current hosting:** GitHub Pages (static website).  
-**Store engine:** Not connected yet.
+**Positioning:** Curated smart-living, fitness, everyday utility and travel/tech products.
 
 ## Current status
-This repository contains a static storefront prototype. GitHub Pages can publish the customer-facing static website, but it cannot run WordPress, WooCommerce, PHP, a database, secure server-side sessions, payment processing or order management.
 
-## Prepared before the commerce backend
-- Brand and storefront presentation
+This repository is a **pre-launch static website preview**, not a live online shop. Product cards are illustrative category concepts only. They are not verified offers, prices, stock or supplier listings. The site does not accept orders or payments.
+
+## Zero-cost hosting recommendation
+
+Use **Cloudflare Pages Free** with the existing GitHub repository. It provides a free `*.pages.dev` address and can automatically redeploy when changes are pushed to GitHub. GitHub Pages is not the recommended host for a commercial store: GitHub's own Pages policy says it is not intended for sites primarily facilitating commercial transactions.
+
+Deployment instructions: [CLOUDFLARE-DEPLOY.md](CLOUDFLARE-DEPLOY.md)
+
+## What is ready
+
+- Brand identity and responsive storefront presentation
+- Category and product-preview layout
+- About, contact, FAQ and customer-information page drafts
 - Product catalogue data structure
-- Customer-facing information-page drafts
-- Contact and order-tracking page shells
-- Backend integration checklist and data model
-- Launch and supplier due-diligence checklist
+- Supplier due-diligence and launch checklists
+- Backend integration notes
 
-## Important launch blockers
-The sample products, prices and product imagery are demonstration content, not verified offers. Do not accept orders until products, supplier costs, delivery terms, returns, legal details, payment processing and checkout are configured and tested. Policy drafts require review and completion with the real business details and destination-market requirements.
+## What is not live yet
 
-## Website
-GitHub Pages: https://flyingcrows.github.io/God-Legacy/  
-Repository: https://github.com/flyingcrows/God-Legacy
+- No verified supplier or real product inventory
+- No shopping checkout, payment gateway or order processing
+- No customer database or live order tracking
+- Contact/newsletter submissions are not connected to a form backend
+- Shipping, returns, privacy and terms pages are drafts and must be completed for the actual business and markets
+
+## Important zero-cost boundaries
+
+A free static host can display a professional website, but it does not automatically provide a full ecommerce backend. Payment processors, suppliers, shipping, refunds and any required tax/business compliance can involve costs. Do not accept payment or promise delivery until those pieces are verified and tested.
+
+Never commit passwords, API keys, payment credentials or customer personal information to this public repository.
+
+## Repository
+
+https://github.com/flyingcrows/God-Legacy
