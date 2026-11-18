@@ -1,0 +1,19 @@
+{
+  "brand": "GOD LEGACY",
+  "tagline": "LIVE SMARTER. LIVE STRONGER.",
+  "currency_display": "USD",
+  "catalogue_status": "DEMO_ONLY_REPLACE_BEFORE_LAUNCH",
+  "categories": [
+    {"id":"smart-gadgets","name":"Smart Gadgets","slug":"smart-gadgets"},
+    {"id":"fitness-tools","name":"Fitness Tools","slug":"fitness-tools"},
+    {"id":"everyday-essentials","name":"Everyday Essentials","slug":"everyday-essentials"},
+    {"id":"wellness-recovery","name":"Wellness & Recovery","slug":"wellness-recovery"},
+    {"id":"travel-tech","name":"Travel & Tech Organisation","slug":"travel-tech"}
+  ],
+  "products": [
+    {"id":"demo-earbuds","name":"True Wireless Earbuds","category":"smart-gadgets","status":"demo","price":34.00,"compare_at_price":49.00,"currency":"USD","supplier_id":null,"supplier_verified":false,"sku":"GL-DEMO-001","stock_status":"not_connected","shipping_profile":null,"images":["https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=800&q=85"],"description":"Demonstration listing only. Replace with verified product specifications, warranty and compatibility information."},
+    {"id":"demo-dumbbell","name":"Adjustable Training Dumbbell","category":"fitness-tools","status":"demo","price":59.00,"compare_at_price":79.00,"currency":"USD","supplier_id":null,"supplier_verified":false,"sku":"GL-DEMO-002","stock_status":"not_connected","shipping_profile":null,"images":["https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=85"],"description":"Demonstration listing only. Replace with verified material, weight, dimensions and safety information."},
+    {"id":"demo-organizer","name":"Everyday Tech Organizer","category":"everyday-essentials","status":"demo","price":22.00,"compare_at_price":29.00,"currency":"USD","supplier_id":null,"supplier_verified":false,"sku":"GL-DEMO-003","stock_status":"not_connected","shipping_profile":null,"images":["https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=800&q=85"],"description":"Demonstration listing only. Replace with actual product photos, dimensions and materials."},
+    {"id":"demo-recovery","name":"Recovery Massage Tool","category":"wellness-recovery","status":"demo","price":45.00,"compare_at_price":65.00,"currency":"USD","supplier_id":null,"supplier_verified":false,"sku":"GL-DEMO-004","stock_status":"not_connected","shipping_profile":null,"images":["https://images.unsplash.com/photo-1599058917212-d750089bc07e?auto=format&fit=crop&w=800&q=85"],"description":"Demonstration listing only. Replace with verified usage instructions and avoid unsubstantiated medical claims."}
+  ]
+}
