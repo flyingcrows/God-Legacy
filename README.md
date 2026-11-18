@@ -1,7 +1,7 @@
-# GOD LEGACY — zero-budget storefront foundation
+# ZAVO — zero-budget storefront foundation
 
-**Brand:** GOD LEGACY  
-**Tagline:** LIVE SMARTER. LIVE STRONGER.  
+**Brand:** ZAVO  
+**Tagline:** GOOD FINDS. BETTER EVERYDAY.  
 **Positioning:** Curated smart-living, fitness, everyday utility and travel/tech products.
 
 ## Current status
