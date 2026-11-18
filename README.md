@@ -21,7 +21,9 @@ Deployment instructions: [CLOUDFLARE-DEPLOY.md](CLOUDFLARE-DEPLOY.md)
 - About, contact, FAQ and customer-information page drafts
 - Product catalogue data structure
 - Supplier due-diligence and launch checklists
-- Backend integration notes
+- Preliminary supplier shortlist and outreach template (`SUPPLIER-RESEARCH.md`)
+- Product discovery and validation framework (`PRODUCT-RESEARCH-PLAN.md`)
+- Backend, order-management and zero-budget launch plan (`BACKEND-AND-LAUNCH-PLAN.md`)
 
 ## What is not live yet
 
@@ -36,6 +38,12 @@ Deployment instructions: [CLOUDFLARE-DEPLOY.md](CLOUDFLARE-DEPLOY.md)
 A free static host can display a professional website, but it does not automatically provide a full ecommerce backend. Payment processors, suppliers, shipping, refunds and any required tax/business compliance can involve costs. Do not accept payment or promise delivery until those pieces are verified and tested.
 
 Never commit passwords, API keys, payment credentials or customer personal information to this public repository.
+
+## Project working documents
+
+- [Supplier research](SUPPLIER-RESEARCH.md)
+- [Product research plan](PRODUCT-RESEARCH-PLAN.md)
+- [Backend and launch plan](BACKEND-AND-LAUNCH-PLAN.md)
 
 ## Repository
 
