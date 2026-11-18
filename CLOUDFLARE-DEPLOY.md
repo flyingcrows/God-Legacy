@@ -17,7 +17,7 @@ This repository is plain HTML/CSS/JavaScript; it does not need WordPress or a bu
 5. Select the repository and production branch **main**.
 6. Set **Framework preset** to **None**.
 7. Leave **Build command** blank.
-8. Set **Build output directory** to `/` (repository root). If the dashboard rejects that value, use `.` as the root output directory.
+8. Set **Build output directory** to `.` (the repository root).
 9. Click **Save and Deploy**.
 
 Cloudflare will assign a free address similar to `god-legacy.pages.dev`. The exact address is confirmed by Cloudflare after project creation and may be unavailable if another account already uses the name.
