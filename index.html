@@ -26,6 +26,39 @@
 .no-results{display:none;padding:20px;background:white;color:var(--muted);font-size:12px}
 @media(max-width:950px){.shell{width:calc(100% - 36px)}.head-main{grid-template-columns:150px minmax(160px,1fr) auto;gap:18px}.head-actions{gap:12px}.head-actions a:first-child{display:none}.hero-grid{grid-template-columns:1fr .72fr}.hero-main{min-height:420px}.side-card{min-height:203px}.benefits{grid-template-columns:repeat(2,1fr);row-gap:18px}.benefit:nth-child(2){border:0}.benefit:nth-child(3){padding-left:0}.category-grid,.product-grid{grid-template-columns:repeat(2,1fr)}.category-image{height:230px}.footer-grid{grid-template-columns:1.5fr 1fr 1fr}.footer-grid>div:first-child{grid-column:1/-1}}
 @media(max-width:620px){.shell{width:calc(100% - 28px)}.announce{font-size:8px}.head-main{height:auto;min-height:70px;grid-template-columns:1fr auto;gap:10px;padding:12px 0}.logo{font-size:27px}.search{grid-column:1/-1;grid-row:2;height:42px}.head-actions{grid-column:2;grid-row:1}.head-actions a{display:none}.nav-inner{height:40px;gap:22px}.nav a{font-size:10px}.hero{padding:13px 0 18px}.hero-grid{grid-template-columns:1fr}.hero-main{min-height:420px}.hero-copy{padding:34px 25px}.hero h1{font-size:52px}.hero-side{grid-template-columns:1fr 1fr;grid-template-rows:180px}.side-card{min-height:180px}.side-copy{left:14px}.side-copy h2{font-size:19px}.side-copy small{font-size:7px}.benefits{padding:15px 10px;margin-bottom:42px;gap:17px 0}.benefit{padding:0 9px;gap:8px}.benefit i{font-size:17px}.benefit b{font-size:9px}.benefit small{font-size:8px}.section{padding-bottom:48px}.section-heading,.edit-head{align-items:flex-start;flex-direction:column}.category-grid{gap:9px}.category-image{height:160px}.category-copy{padding:13px}.category-copy h3{font-size:16px}.category-copy p{font-size:9px}.edit-band{padding:40px 0;margin-bottom:48px}.product-grid{gap:10px}.product-photo{height:175px}.product-info{padding:12px}.product-info h3{font-size:15px}.product-info p{font-size:9px}.story{grid-template-columns:1fr;margin-bottom:45px}.story-image{min-height:240px}.story-copy{padding:36px 25px}.prelaunch{align-items:flex-start;flex-direction:column;padding:22px;margin-bottom:48px}.footer-grid{grid-template-columns:1fr 1fr;gap:26px 16px}.footer-grid>div:first-child{grid-column:1/-1}.copyright{flex-direction:column}}
+
+.catalogue-state{grid-column:1/-1;background:#fff;border:1px solid #dfe4e9;padding:28px;color:var(--muted);font-size:12px;line-height:1.7}
+.product-card{background:#fff;border:1px solid #dfe4e9;min-width:0;display:flex;flex-direction:column}
+.product-card .product-photo{height:220px;background:#e3e6e9;overflow:hidden;position:relative}
+.product-card .product-photo img{width:100%;height:100%;object-fit:cover}
+.product-card .product-info{display:flex;flex-direction:column;flex:1}
+.product-price{font-size:15px;font-weight:800;color:var(--navy);margin-top:12px}
+.add-cart{margin-top:14px;border:0;background:var(--navy);color:#fff;padding:12px 14px;font-size:10px;font-weight:800;letter-spacing:.06em;cursor:pointer}
+.add-cart:hover{background:var(--orange)}.add-cart:disabled{opacity:.45;cursor:not-allowed}
+.cart-overlay{position:fixed;inset:0;background:rgba(10,20,35,.48);z-index:60}
+.cart-drawer{position:fixed;z-index:61;right:0;top:0;height:100dvh;width:min(440px,100%);background:#fff;box-shadow:-12px 0 40px rgba(10,20,35,.15);transform:translateX(105%);transition:transform .25s ease;display:flex;flex-direction:column;padding:26px}
+.cart-drawer.open{transform:translateX(0)}
+.cart-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px}
+.cart-head small{font-size:9px;letter-spacing:.15em;color:var(--orange);font-weight:800}
+.cart-head h2{font:800 28px var(--display);color:var(--navy);margin:6px 0 0}
+.cart-close{border:1px solid var(--line);background:#fff;border-radius:50%;width:38px;height:38px;font-size:24px;cursor:pointer}
+.cart-items{overflow:auto;flex:1;padding:12px 0}
+.cart-empty{font-size:12px;color:var(--muted);padding:18px 0}
+.cart-line{display:grid;grid-template-columns:68px 1fr auto;gap:12px;padding:14px 0;border-bottom:1px solid var(--line);align-items:center}
+.cart-line img{width:68px;height:68px;object-fit:cover;background:#f0f1f2}
+.cart-line h3{font-size:12px;color:var(--navy);margin:0 0 5px}
+.cart-line small{font-size:10px;color:var(--muted)}
+.cart-qty{display:flex;align-items:center;gap:8px;margin-top:8px}
+.cart-qty button{width:25px;height:25px;border:1px solid var(--line);background:#fff;cursor:pointer}
+.cart-remove{border:0;background:none;color:#a44;font-size:10px;cursor:pointer;margin-top:5px;padding:0}
+.cart-foot{border-top:1px solid var(--line);padding-top:18px}
+.cart-subtotal{display:flex;justify-content:space-between;color:var(--navy);font-size:13px}
+.cart-foot p,.cart-foot small{font-size:10px;line-height:1.6;color:var(--muted)}
+.checkout-button{width:100%;justify-content:space-between;border:0;cursor:pointer}
+.checkout-button:disabled{opacity:.45;cursor:not-allowed}
+#cartCount{display:inline!important;font:inherit!important;margin:0!important}
+@media(max-width:620px){.product-card .product-photo{height:175px}.cart-drawer{padding:20px}}
+
 </style>
 </head>
 <body>
@@ -34,7 +67,7 @@
  <div class="shell head-main">
   <a class="logo" href="index.html">za<span>v</span>o<small>GOOD FINDS. BETTER EVERYDAY.</small></a>
   <form class="search" id="searchForm" role="search"><input id="searchInput" type="search" placeholder="Search everyday essentials, travel, tech..." aria-label="Search collections"><button type="submit" aria-label="Search">⌕</button></form>
-  <div class="head-actions"><a href="contact.html">Need help?<b>Contact us</b></a><a class="bag" href="#collections"><span class="bag-icon">⌑</span><span>Explore<b>Collections</b></span></a></div>
+  <div class="head-actions"><a href="contact.html">Need help?<b>Contact us</b></a><a class="bag" href="#cartDrawer" id="cartOpen" aria-label="Open shopping cart"><span class="bag-icon">⌑</span><span>Shopping<b>Cart <span id="cartCount">0</span></b></span></a></div>
  </div>
  <nav class="nav"><div class="shell nav-inner"><a href="#collections">Shop all</a><a href="#collections">Technology</a><a href="#collections">Home & living</a><a href="#collections">Travel</a><a href="#collections">Fitness</a><a href="about.html">Our story</a><a href="faq.html">Help centre</a></div></nav>
 </header>
@@ -63,27 +96,24 @@
 </div></section>
 <section class="edit-band" id="the-edit"><div class="shell">
  <div class="edit-head"><div><div class="kicker">A first look at ZAVO</div><h2>The edit we're putting together.</h2></div><p>We are checking products and suppliers before opening orders. These previews show the direction of the store — they are not yet available to buy.</p></div>
- <div class="product-grid" id="productGrid">
-  <article class="product" data-search="desk workspace laptop technology organisation"><div class="product-photo"><img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=800&q=85" alt="Laptop and work essentials" loading="lazy"><span class="tag">Work smarter</span></div><div class="product-info"><small>Work / Organisation</small><h3>The better workspace</h3><p>Useful details for a calmer, more organised desk.</p><span class="availability">Collection in development</span></div></article>
-  <article class="product" data-search="travel bag organiser journey outdoors"><div class="product-photo"><img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=85" alt="Travel backpack" loading="lazy"><span class="tag">Ready to go</span></div><div class="product-info"><small>Travel / Utility</small><h3>Made to move</h3><p>Practical companions for lighter journeys.</p><span class="availability">Collection in development</span></div></article>
-  <article class="product" data-search="fitness training movement workout"><div class="product-photo"><img src="https://images.unsplash.com/photo-1517838277536-fc4e4b2e6f3a?auto=format&fit=crop&w=800&q=85" alt="Fitness training essentials" loading="lazy"><span class="tag">Find your rhythm</span></div><div class="product-info"><small>Movement / Fitness</small><h3>Everyday movement</h3><p>Simple training essentials for real routines.</p><span class="availability">Collection in development</span></div></article>
-  <article class="product" data-search="home wellbeing calm living daily ritual"><div class="product-photo"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=85" alt="Quiet wellness interior" loading="lazy"><span class="tag">Slow it down</span></div><div class="product-info"><small>Home / Wellbeing</small><h3>A little more balance</h3><p>Everyday pieces for a more intentional space.</p><span class="availability">Collection in development</span></div></article>
- </div><div class="no-results" id="noResults">No collection preview matches that search yet. Try another word.</div>
+ <div class="product-grid" id="productGrid" aria-live="polite"><div class="catalogue-state" id="catalogueState">Connecting to the ZAVO collection…</div></div>
+
 </div></section>
 <section class="shell story"><div class="story-image"><img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1300&q=85" alt="Thoughtfully curated retail environment" loading="lazy"></div><div class="story-copy"><div class="kicker">A better way to browse</div><h2>Less noise.<br>More useful.</h2><p>ZAVO is being built around a simple idea: a product should earn its place. We look beyond the picture — toward quality, supplier reliability, clear delivery information and support that puts customers first.</p><a class="button" href="about.html">Get to know ZAVO <span>↗</span></a></div></section>
 <div class="shell prelaunch"><div><h2>We're getting the first collection right.</h2><p>ZAVO is currently in pre-launch. Product previews are for browsing only; checkout, payments and delivery are not active yet. Get in touch if you'd like to follow the launch.</p></div><a class="button" href="contact.html">Contact ZAVO <span>↗</span></a></div>
 </main>
+
+<aside class="cart-overlay" id="cartOverlay" hidden></aside>
+<aside class="cart-drawer" id="cartDrawer" aria-hidden="true" aria-label="Shopping cart">
+ <div class="cart-head"><div><small>YOUR SELECTION</small><h2>Your cart</h2></div><button id="cartClose" class="cart-close" aria-label="Close cart">×</button></div>
+ <div id="cartItems" class="cart-items"><p class="cart-empty">Your cart is waiting for a good find.</p></div>
+ <div class="cart-foot"><div class="cart-subtotal"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div><p>Shipping and taxes are calculated at Shopify checkout.</p><button id="checkoutButton" class="button checkout-button" disabled>Continue to checkout <span>↗</span></button><small id="checkoutStatus" role="status"></small></div>
+</aside>
 <footer class="footer"><div class="shell"><div class="footer-grid">
  <div><div class="footer-logo">za<span>v</span>o</div><p class="footer-desc">Good finds for better everyday living. A considered marketplace for useful discoveries across work, home, travel and movement.</p></div>
  <div class="footer-col"><b>Explore</b><a href="#collections">All collections</a><a href="#the-edit">The ZAVO edit</a><a href="about.html">Our story</a></div>
  <div class="footer-col"><b>Customer care</b><a href="contact.html">Contact</a><a href="faq.html">FAQs</a><a href="track-order.html">Order tracking</a></div>
  <div class="footer-col"><b>Information</b><a href="shipping.html">Shipping</a><a href="returns.html">Returns</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div>
 </div><div class="copyright"><span>© <span id="year"></span> ZAVO. All rights reserved.</span><span>Good finds. Better everyday.</span></div></div></footer>
-<script>
-document.getElementById('year').textContent=new Date().getFullYear();
-const form=document.getElementById('searchForm'),input=document.getElementById('searchInput'),cards=[...document.querySelectorAll('.product')],empty=document.getElementById('noResults');
-function filterProducts(){const q=input.value.trim().toLowerCase();let count=0;cards.forEach(card=>{const match=!q||(card.dataset.search+' '+card.innerText).toLowerCase().includes(q);card.style.display=match?'':'none';if(match)count++});empty.style.display=count?'none':'block';document.getElementById('the-edit').scrollIntoView({behavior:'smooth'});}
-form.addEventListener('submit',e=>{e.preventDefault();filterProducts()});
-input.addEventListener('input',()=>{if(!input.value.trim()){cards.forEach(c=>c.style.display='');empty.style.display='none'}});
-</script>
+<script src="assets/zavo-storefront.js" defer></script>
 </body></html>
