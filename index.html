@@ -43,6 +43,11 @@
 @media(max-width:700px){.product-photo{height:210px}.hero-grid{border-radius:12px}}
 @media(prefers-reduced-motion:reduce){.product-card{animation:none}}
 
+
+.quick-view-trigger{position:absolute;left:12px;right:12px;bottom:12px;z-index:3;border:0;border-radius:8px;background:#101a2b;color:#fff;padding:12px;font-size:10px;font-weight:800;opacity:0;transform:translateY(8px);transition:.2s}.product-card:hover .quick-view-trigger,.quick-view-trigger:focus{opacity:1;transform:none}
+.quickview-backdrop{position:fixed;inset:0;background:rgba(5,12,24,.68);z-index:80;backdrop-filter:blur(5px)}.quickview{position:fixed;z-index:81;left:50%;top:50%;transform:translate(-50%,-46%) scale(.98);opacity:0;pointer-events:none;width:min(850px,calc(100% - 28px));max-height:88dvh;overflow:auto;background:#fff;border-radius:18px;padding:28px;box-shadow:0 30px 90px rgba(0,0,0,.25);transition:.22s}.quickview.open{opacity:1;pointer-events:auto;transform:translate(-50%,-50%) scale(1)}.quickview-close{position:absolute;right:15px;top:15px;width:38px;height:38px;border:1px solid #e5eaf2;border-radius:50%;background:#fff;font-size:22px;z-index:2}.quickview-layout{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:center}.quickview-layout img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;background:#f1f4f8}.quickview-copy small{font-size:9px;font-weight:800;letter-spacing:.15em;color:#477cf5}.quickview-copy h2{font:800 clamp(25px,4vw,38px)/1.05 var(--display);letter-spacing:-.05em;margin:12px 0}.quickview-copy p{font-size:12px;line-height:1.8;color:#697386}.quickview-price{display:block;font-size:22px;margin:20px 0}.quickview-copy .btn{width:100%;justify-content:space-between}
+@media(max-width:700px){.quick-view-trigger{opacity:1;transform:none;left:8px;right:8px;bottom:8px;padding:10px}.quickview{padding:20px}.quickview-layout{grid-template-columns:1fr;gap:18px}.quickview-layout img{max-height:260px}}
+@media(prefers-reduced-motion:reduce){.quickview{transition:none}}
 </style>
 </head>
 <body>
@@ -101,5 +106,5 @@
  <div class="cart-items" id="cartItems"><p class="cart-empty">Your bag is waiting for a good find.</p></div>
  <div class="cart-foot"><div class="cart-total"><span>Subtotal</span><strong id="cartSubtotal">₹0</strong></div><p>Shipping and applicable taxes are shown at Shopify checkout.</p><button class="btn checkout" id="checkoutButton" type="button" disabled>Continue to secure checkout <span>↗</span></button><small id="checkoutStatus" role="status"></small></div>
 </aside>
-<script src="assets/zavo-storefront.js" defer></script>
+<div class="quickview-backdrop" id="quickviewBackdrop" hidden></div><section class="quickview" id="quickview" role="dialog" aria-modal="true" aria-labelledby="quickviewTitle" aria-hidden="true"><button class="quickview-close" id="quickviewClose" type="button" aria-label="Close quick view">×</button><div id="quickviewBody"></div></section><script src="assets/zavo-storefront.js" defer></script>
 </body></html>
