@@ -6,7 +6,7 @@
 
 ## Current status
 
-This repository is a **pre-launch static website preview**, not a live online shop. Product cards are illustrative category concepts only. They are not verified offers, prices, stock or supplier listings. The site does not accept orders or payments.
+The current production deployment remains a pre-launch preview. The `shopify-dynamic-storefront` branch contains the first headless Shopify integration pass; it must be preview-tested and merged before production uses it. Only real products published and available through Shopify should appear. The site must not be used to accept orders until payment, supplier fulfilment and launch checks are complete.
 
 ## Zero-cost hosting recommendation
 
@@ -19,7 +19,7 @@ Deployment instructions: [CLOUDFLARE-DEPLOY.md](CLOUDFLARE-DEPLOY.md)
 - Brand identity and responsive storefront presentation
 - Category and product-preview layout
 - About, contact, FAQ and customer-information page drafts
-- Product catalogue data structure
+- Shopify-powered dynamic catalogue/cart integration prepared on `shopify-dynamic-storefront`
 - Supplier due-diligence and launch checklists
 - Preliminary supplier shortlist and outreach template (`SUPPLIER-RESEARCH.md`)
 - Product discovery and validation framework (`PRODUCT-RESEARCH-PLAN.md`)
@@ -27,8 +27,8 @@ Deployment instructions: [CLOUDFLARE-DEPLOY.md](CLOUDFLARE-DEPLOY.md)
 
 ## What is not live yet
 
-- No verified supplier or real product inventory
-- No shopping checkout, payment gateway or order processing
+- No verified supplier or approved sellable product inventory
+- Shopify checkout integration is prepared on the feature branch; payment gateway readiness and full end-to-end order processing are not yet verified
 - No customer database or live order tracking
 - Contact/newsletter submissions are not connected to a form backend
 - Shipping, returns, privacy and terms pages are drafts and must be completed for the actual business and markets
